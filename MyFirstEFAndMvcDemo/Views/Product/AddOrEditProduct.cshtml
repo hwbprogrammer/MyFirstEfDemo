@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "AddProductInfo";
+}
+@model MyFirst.Data.Dto.ProductModel
+@section Head{
+
+    <script src="~/Scripts/Product/Product.js"></script>
+
+    <script type="text/javascript">
+        var page;
+        $(function () {
+            page = new MF.ProductMaintain();
+        });
+        function returns(data, status, xhr)
+        {
+                $.refreshParent();
+        }
+       
+    </script>
+}
+@using (Ajax.BeginForm("SaveProductInfo", "Product", new { area = "Controllers" }, new AjaxOptions { },new {@class= "form-horizontal" }))
+{
+            <div class="row">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Name, new { @class = "col-sm-3" })
+                    <div class="col-xs-4">
+                        @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                        @Html.HiddenFor(model=>model.ID)
+                        @Html.HiddenFor(model => model.Node)
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Price, new { @class = "col-sm-3" })
+                    <div class="col-xs-4">
+                        @Html.TextBoxFor(model => model.Price, new { @class = "form-control" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Quantity, new { @class = "col-sm-3 " })
+                    <div class="col-xs-4">
+                        @Html.TextBoxFor(model => model.Quantity, new { @class = "form-control" })
+                    </div>
+                </div>
+            </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success" id="btnSave">确 定</button><span id="tip"></span>
+            <button type="button" class="btn btn-default" onclick="MF.CloseDialog('dlg_Product')">关 闭</button>
+            <a></a>
+        </div>
+
+}
+

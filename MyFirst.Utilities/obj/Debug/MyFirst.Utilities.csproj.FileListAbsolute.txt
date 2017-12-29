@@ -1,0 +1,5 @@
+F:\无名\MyFirstEFAndMvcDemo\MyFirst.Utilities\bin\Debug\MyFirst.Utilities.dll
+F:\无名\MyFirstEFAndMvcDemo\MyFirst.Utilities\bin\Debug\MyFirst.Utilities.pdb
+F:\无名\MyFirstEFAndMvcDemo\MyFirst.Utilities\obj\Debug\MyFirst.Utilities.dll
+F:\无名\MyFirstEFAndMvcDemo\MyFirst.Utilities\obj\Debug\MyFirst.Utilities.pdb
+F:\无名\MyFirstEFAndMvcDemo\MyFirst.Utilities\obj\Debug\MyFirst.Utilities.csprojResolveAssemblyReference.cache

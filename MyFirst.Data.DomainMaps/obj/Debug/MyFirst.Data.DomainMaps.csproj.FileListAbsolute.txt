@@ -1,0 +1,8 @@
+F:\无名\MyFirstEFAndMvcDemo\MyFirst.Data.DomainMaps\bin\Debug\MyFirst.Data.DomainMaps.dll
+F:\无名\MyFirstEFAndMvcDemo\MyFirst.Data.DomainMaps\bin\Debug\MyFirst.Data.DomainMaps.pdb
+F:\无名\MyFirstEFAndMvcDemo\MyFirst.Data.DomainMaps\bin\Debug\EntityFramework.dll
+F:\无名\MyFirstEFAndMvcDemo\MyFirst.Data.DomainMaps\bin\Debug\MyFirst.Data.Domain.dll
+F:\无名\MyFirstEFAndMvcDemo\MyFirst.Data.DomainMaps\bin\Debug\MyFirst.Data.Domain.pdb
+F:\无名\MyFirstEFAndMvcDemo\MyFirst.Data.DomainMaps\obj\Debug\MyFirst.Data.DomainMaps.csprojResolveAssemblyReference.cache
+F:\无名\MyFirstEFAndMvcDemo\MyFirst.Data.DomainMaps\obj\Debug\MyFirst.Data.DomainMaps.dll
+F:\无名\MyFirstEFAndMvcDemo\MyFirst.Data.DomainMaps\obj\Debug\MyFirst.Data.DomainMaps.pdb

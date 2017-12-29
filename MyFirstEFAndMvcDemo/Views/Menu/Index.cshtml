@@ -1,0 +1,242 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Head{
+<link href="~/Content/Web/webTop.css" rel="stylesheet" />
+<link href="~/Content/Web/Menu.css" rel="stylesheet" />
+<script src="~/Scripts/WebTop/webTop.js"></script>
+    <script type="text/javascript">
+        function changeTxt() {
+            if ($("#search-kj").val() == "") {
+                $("#message").css("display", "block");
+                $("#message").addClass("message");
+            } else {
+                $("#message").css("display", "none");
+            }
+        }
+    </script>
+}
+<div class="top">
+    <div class="row webTop_Line navbar-fixed-top container-fluid">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-4 col-md-4 col-sm-4 webTop">
+                <ul>
+                    <li>嗨! 欢迎光临</li>
+                    <li><a href="#">请登录</a></li>
+                    <li><a href="#">免费注册</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2">
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 webTop">
+                <ul>
+                    <li>
+                        <div class="MyBaoBei">
+                            <div class="MyBackpack">
+                                <a href="#">我的背包</a>
+                            </div>
+                            <div class="MyBackpackList">
+                                <a href="#">已买到的宝贝</a>
+                                <a href="#">已卖出的宝贝</a>
+                            </div>
+                        </div>
+                   <span></span>
+                    </li>
+                    <li><a href="#">购物车</a></li>
+                    <li><a href="#">手机版</a></li>
+                    <li>
+                    <div class="gps">
+                        <div class="webGps">
+                            <a href="#">网站导航</a>
+                        </div>
+                        <div class="GpsDown">
+                            <dl class="col-lg-5 col-md-5 col-sm-5 GpsDetailed">
+                                <dt class="hot">热点推荐</dt>
+                                <dd>
+                                    <a href="#">天猫超市</a>
+                                    <a href="#">天猫超市</a>
+                                    <a href="#">天猫超市</a>
+                                    <a href="#">天猫超市</a>
+                                    <a href="#">天猫超市</a>
+                                    <a href="#">天猫超市</a>
+                                    <a href="#">天猫超市</a>
+                                    <a href="#">天猫超市</a>
+                                </dd>
+                            </dl>
+                            <dl class="col-lg-4 col-md-4 col-sm-4 GpsDetailed">
+                                <dt class="market">行业市场</dt>
+                                <dd>
+                                    <a href="#">美妆</a>
+                                    <a href="#">美妆</a>
+                                    <a href="#">美妆</a>
+                                    <a href="#">美妆</a>
+                                    <a href="#">美妆</a>
+                                    <a href="#">美妆</a>
+                                    <a href="#">美妆</a>
+                                    <a href="#">美妆</a>
+                                </dd>
+                            </dl>
+                            <dl class="col-lg-3 col-md-3 col-sm-3 GpsDetailed">
+                                <dt class="help">服务指南</dt>
+                                <dd class="help_dd">
+                                    <a href="#">帮助中心</a>
+                                    <a href="#">帮助中心</a>
+                                    <a href="#">帮助中心</a>
+                                    <a href="#">帮助中心</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </div>   
+    </div><!--TOP-->
+    <div class="row middle container">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-3 col-md-3 col-sm-3 mainPic">
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5">
+                <div class="homeOption" >
+                    <ul>
+                        <li>
+                        <div> 首页<p>Home</p></div>
+                       </li>
+                        <li>
+                            <div>鲜果<p>Fruit</p></div>
+                        </li>
+                        <li>
+                            <div> 蔬菜<p>Greens</p></div>
+                       </li>
+                        <li>
+                            <div>点心<p>Snack</p></div>
+                        </li>
+                        <li>
+                            <div>会员中心<p>Vip Clup</p></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4" >
+                <div class="SeekProduct">
+                    <input id="search-kj" type="search" oninput="changeTxt()" />
+                    <label for="search-kj" id="message">请输入关键字</label>
+                    <button class="icon-search"></button>
+                    <div>
+                        <ul>
+                            <li>热门:</li>
+                            <li><a href="#">柑橘</a></li>
+                            <li><a href="#">仁果</a></li>
+                            <li><a href="#">核果</a></li>
+                            <li><a href="#">浆果</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div><!--Middle-->
+    <div class="Menu">
+        <div class="MenuLeft">
+            <p>商品分类</p>
+            <div class="classify">
+                <ul>
+                    <li>
+                        <dl class="fileLeft">
+                            <dt>男人</dt>
+                            <dd>
+                                <a href="#">xw素材网</a>
+                                <a href="#">xw素材网</a>
+                                <a href="#">xw素材网</a>
+                                <a href="#">xw素材网</a>
+                                <a href="#">xw素材网</a>
+                                <a href="#">xw素材网</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class="fileLeft">
+                            <dt>美食</dt>
+                            <dd>
+                                <a href="#">土豆回锅肉</a>
+                                <a href="#">土豆回锅肉</a>
+                                <a href="#">土豆回锅肉</a>
+                                <a href="#">土豆回锅肉</a>
+                                <a href="#">土豆回锅肉</a>
+                                <a href="#">土豆回锅肉</a>
+                                <a href="#">土豆回锅肉</a>
+                                <a href="#">土豆回锅肉</a>
+                            </dd>
+
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class="fileLeft">
+                            <dt>女人</dt>
+                            <dd>
+                                <a href="#">貂皮大衣</a>
+                                <a href="#">貂皮大衣</a>
+                                <a href="#">貂皮大衣</a>
+                                <a href="#">貂皮大衣</a>
+                                <a href="#">貂皮大衣</a>
+                                <a href="#">貂皮大衣</a>
+                                <a href="#">貂皮大衣</a>
+                            </dd>
+
+                        </dl>
+
+                    </li>
+                    <li>
+                        <dl class="fileLeft">
+                            <dt>数码</dt>
+                            <dd>
+                                <a href="#">单反相机</a>
+                                <a href="#">单反相机</a>
+                                <a href="#">单反相机</a>
+                                <a href="#">单反相机</a>
+                                <a href="#">单反相机</a>
+                                <a href="#">单反相机</a>
+                                <a href="#">单反相机</a>
+                            </dd>
+
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="MenuRight">
+                <dl class="fileRight">
+                    <dt>上衣</dt>
+                    <dd>
+                        <a href="#">冬季棉袄</a>
+                        <a href="#">冬季卫衣</a>
+                        <a href="#">冬季风衣</a>
+                        <a href="#">冬季羽绒服</a>
+                    </dd>
+                </dl>
+
+                <dl class="fileRight">
+                    <dt>下装</dt>
+                    <dd>
+                        <a href="#">花花公子</a>
+                        <a href="#">森马</a>
+                        <a href="#">美特斯邦威</a>
+                        <a href="#">优衣库</a>
+                    </dd>
+                </dl>
+
+                <dl class="fileRight">
+                    <dt>鞋</dt>
+                    <dd>
+                        <a href="#">特步</a>
+                        <a href="#">NewBee</a>
+                        <a href="#">乔丹</a>
+                        <a href="#">安踏</a>
+                    </dd>
+                </dl>
+
+            </div>
+        </div>
+    </div>
+</div>

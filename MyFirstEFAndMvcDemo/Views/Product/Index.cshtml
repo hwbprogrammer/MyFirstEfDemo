@@ -1,0 +1,105 @@
+﻿@model List<MyFirst.Data.Domain.Product>
+@using MyFirstEFAndMvcDemo.Extensions
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Head{
+<script src="~/Scripts/Product/Product.js"></script>
+<style type="text/css" media="screen">
+    html, body {
+        height: 100%;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+    }
+
+    #flashContent {
+        display: none;
+    }
+</style> 
+    <script type="text/javascript">
+        var page;
+        $(function () {
+            page = new MF.ProductInfo();
+            //--表格控件
+            var defaultColunms = page.initColumn();
+            var table = new MF.BSTable("td_Product", "/Product/GetProductInfo", defaultColunms);
+            table.setPaginationType("server");
+            table.setQueryParams("server");
+            table.init();
+            //--
+        });
+        function returns()
+        {
+            $("#td_Product").bootstrapTable("refresh");
+        }
+        function aaa()
+        { }
+    </script>
+    }
+<script type="text/javascript" language=""></script>  
+<div class="panel panel-default">
+    <div class="panel-body">
+        @*<button class="btn btn-primary" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加</button> &nbsp;&nbsp;*@
+        <button class="btn btn-primary" id="add"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加</button> &nbsp;&nbsp;
+        <button type="button" class="btn btn-info" id="edit"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>编辑</button>
+        &nbsp;&nbsp;
+        <button type="button" class="btn btn-danger" id="del"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>删除</button>
+
+    </div>
+   @Html.TableFor("td_Product")
+</div>
+<form class="form-horizontal" role="form">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h2 class="modal-title" id="myModalLabel">
+                        添加产品
+                    </h2>
+                </div>
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label for="Name" class="col-sm-3 control-label">产品名称:</label>
+                        <div class="col-xs-4">
+                            <input type="text" id="Name" class="form-control" />
+                        </div>
+                    </div><!--产品名称-->
+                    <div class="form-group">
+                        <label for="Price" class="col-sm-3 control-label">产品价格:</label>
+                        <div class="col-xs-4">
+                            <input type="text" id="Price" class="form-control" />
+                        </div>
+                    </div><!--产品价格--> 
+                    <div class="form-group">
+                        <label for="Quantity" class="col-sm-3 control-label">产品数量:</label>
+                        <div class="col-xs-4">
+                            <input type="text" id="Quantity" class="form-control" />
+                        </div>
+                    </div><!--产品数量-->
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="add" class="btn btn-success">
+                        提交
+                    </button><span id="tip"></span>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        关闭
+                    </button>
+
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+</form>
+
+   

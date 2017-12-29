@@ -1,0 +1,192 @@
+﻿ * {
+            margin: 0;
+            padding: 0;
+    }
+ /*头部*/
+.webTop  ul li {
+    font-size:12px;
+    float:left;
+    list-style:none;
+    padding-right:20px;
+    color:#bdbdbd;
+    line-height:32px;
+}
+.webTop {
+    height:32px;
+    padding:0 15px;
+}
+.webTop_Line{
+    background:#f2f2f2;
+    border-bottom:1px solid #EEEEEE;
+}
+.webTop  ul li a{
+    text-decoration:none;
+    color:#bdbdbd;
+}
+.webTop  ul li a:hover{
+    color:#f71111;
+}
+.MyBackpackList{
+    width:89px;
+    background-color:white;
+    border: 1px solid #EEEEEE;
+    border-top:0;
+    position:absolute;
+    top:32px;
+    left:15px;
+    display:none;
+    text-align:center;
+}
+.MyBackpack{
+    width:70px;
+    text-align:center;
+}
+
+.MyBackpack a{
+    text-decoration:solid
+}
+span{
+    width: 0px;
+	height: 0px;
+	border-top: 3px solid #bdbdbd;
+	border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+	position: absolute;
+	top: 15px;
+	left: 75px;
+	transition: all 1s;
+}
+.webGps{
+    width:60px;
+    text-align:center;
+}
+.GpsDown{
+    display:none;
+    width:800px;
+    position:absolute;
+    top:33px;
+    left:-475px;
+    border:1px solid #EEEEEE;
+    border-top:0px;
+    background-color:white;
+    z-index:9999
+}
+.GpsDown dl{
+      padding-top:10px;
+}
+.GpsDetailed dt{
+    width:200px;
+    height:30px;
+    float:left;
+}
+.GpsDetailed dd{
+    float:left;
+    border-right:1px solid #EEEEEE;
+}
+.GpsDetailed dd a{
+    float:left;
+    height:32px;
+    padding-right:15px;
+}
+.hot{
+    font-size:23px;
+    color:#bdbdbd;
+}
+.hot{
+    font-size:23px;
+    color:#f71111;
+}
+.market{
+    font-size:18px;
+    color:#1531d1;
+}
+.help{
+    font-size:18px;
+}
+.help_dd{
+    border-right:0px
+}
+/*中部*/
+.middle{
+    margin-top:20px;
+}
+.mainPic{
+    background-image:url("../Images/mainPic.png") ;
+    background-repeat:no-repeat;
+    height:106px;
+}
+.SeekProduct{
+    margin-top:30px;
+}
+#message{
+     font-size: 4px;
+     color:#EEEEEE;
+     position: absolute;
+     left:20px;
+}
+.message{
+     position: absolute;
+     top:33px;
+}
+.SeekProduct li{
+    list-style:none;
+    float:left;
+    color:#bdbdbd;
+    padding-right:10px;
+    font-size:12px;
+}
+.SeekProduct li a{
+     color:#bdbdbd;
+}
+#search-kj{
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
+    outline:none;
+}
+/**
+  制作搜索图标
+*/
+.icon-search{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border:2px solid #bdbdbd;
+    position: relative;
+    left:-30px;
+    top:-5px;
+    background-color:white
+}
+.icon-search:after{
+    content: "";
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width:8px;
+    height: 2px;
+    position: absolute;
+    top:10px;
+    left:7px;
+    background-color: #bdbdbd;
+}
+.homeOption{
+    margin-top:30px;
+}
+.homeOption ul li 
+{
+    float:left;
+    line-height:18px;
+    list-style:none;
+    color:#bdbdbd;
+    font-size:16px;
+    text-align:center;
+    
+}
+.homeOption ul li div{
+      border-right:1px solid #EEEEEE;
+      padding-right:8px;
+     width:80px;
+}
+.homeOption ul li div:hover{
+    background-color:#e8e2e2
+}
